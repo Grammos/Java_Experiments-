@@ -1,0 +1,56 @@
+package simpleWebBrowser;
+
+import java.awt.BorderLayout;
+import java.awt.Event;
+import java.awt.event.ActionEvent;
+
+import javax.swing.*;
+import javax.swing.event.HyperlinkEvent;
+
+/*
+ * Would contain the GUI stuffs for the Browser; addressBar
+ * display to show the page, listen the users' URL, etc! 
+ * 
+ * */
+
+public class Browser extends JFrame {
+	//the type when the user type the URL.
+	private JTextField addressBar;
+	
+	private JEditorPane display;
+	
+	//constructor 
+	public Browser()
+	{//browser name; would appear to the top of application!
+		super("Gramos Browser");
+		
+		addressBar = new JTextField(" enter your URL for browsing! ");
+		
+		addressBar.addActionListener(
+			new ActionListener(){
+				public void actionPerformed(ActionEvent event){
+					loadPage(event.getActionCommand());
+				}
+				
+			}			
+				
+		);
+		//browser would be shown on the middle of the page~
+		add(addressBar, BorderLayout.NORTH);
+		//to not change the text, like e.g not being able to change the list to youtube!
+		display = new JEditorPane();
+		display.setEditable(false);
+		//to not type your link manually 
+		display.addHyperlinkListener(
+			new HyperlinkListener(){
+				public void hyperlinkUpdate(HyperlinkEvent event){
+					if(event.getEventType() == HyperlinkEvent.EventType.ACTIVATED){
+						loadPage(event.getURL().toString());
+					}
+					//https://www.youtube.com/watch?v=PVOG57JaHPg&list=PL27BCE863B6A864E3&index=36
+				}
+			}
+		);
+	}
+	
+}

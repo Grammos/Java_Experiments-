@@ -1,0 +1,23 @@
+package simpleWebBrowser;
+
+import javax.swing.JEditorPane;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class Browser extends JFrame{
+	
+	//address bar at a top. would be responsible for the URL!
+	private JTextField addressBar;
+	//the main display window, would display the URL's results!
+	private JEditorPane display;
+	
+	//constructor
+	public Browser(){
+		//give the app. a title. 
+		super("GramoBrowser");
+		
+		addressBar = new JTextField("enter a URL!");
+	}
+	
+	
+}

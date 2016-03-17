@@ -1,0 +1,12 @@
+package simpleWebBrowser;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class Browser extends JFrame{
+	
+	//address bar at a top: 
+	private JTextField addressBar;
+	
+	
+}

@@ -1,0 +1,6 @@
+package simpleUserProgram;
+
+import java.applet.*;
+public class Perdoruesi extends JApplet {
+
+}

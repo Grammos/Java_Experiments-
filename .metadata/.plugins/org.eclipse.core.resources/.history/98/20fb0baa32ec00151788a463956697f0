@@ -1,0 +1,9 @@
+package simpleWebBrowser;
+
+import javax.swing.JFrame;
+
+public class Browser extends JFrame{
+	
+	
+	
+}

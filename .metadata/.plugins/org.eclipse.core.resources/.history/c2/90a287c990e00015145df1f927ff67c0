@@ -1,0 +1,29 @@
+package simpleWebBrowser;
+
+import java.awt.Event;
+import java.awt.event.ActionEvent;
+
+import javax.swing.*;
+
+/*
+ * Would contain the GUI stuffs for the Browser; addressBar
+ * display to show the page, listen the users' URL, etc! 
+ * 
+ * */
+
+public class Browser extends JFrame {
+	//the type when the user type the URL.
+	private JTextField addressBar;
+	
+	private JEditorPane display;
+	
+	//constructor 
+	public Browser()
+	{//browser name; would appear to the top of application!
+		super("Gramos Browser");
+		
+		addressBar = new JTextField(" enter your URL for browsing! ");
+		
+	}
+	
+}

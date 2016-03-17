@@ -1,0 +1,39 @@
+package simpleWebBrowser;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JEditorPane;
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class Browser extends JFrame{
+	
+	//address bar at a top. would be responsible for the URL!
+	private JTextField addressBar;
+	//the main display window, would display the URL's results!
+	private JEditorPane display;
+	
+	//constructor
+	public Browser(){
+		//give the app. a title. 
+		super("GramoBrowser");
+		
+		addressBar = new JTextField("enter a URL!");
+		//when the user press the enter tab, the ac. listener would 
+		//be proceed the process. 
+		addressBar.addActionListener(
+			new ActionListener(){
+				@Override
+				public void actionPerformed(ActionEvent event) {
+					//the method would be able to get the URL from the addressBar
+					//variable
+					loadURL(event.getActionCommand());
+					
+				}
+			}
+		);
+	}
+	
+	
+}

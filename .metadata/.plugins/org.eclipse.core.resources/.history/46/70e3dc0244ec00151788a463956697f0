@@ -1,0 +1,9 @@
+package simpleWebBrowser;
+
+public class ReadFileMain {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

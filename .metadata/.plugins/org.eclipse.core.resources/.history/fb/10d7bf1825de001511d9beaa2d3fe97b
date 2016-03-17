@@ -1,0 +1,8 @@
+package simpleUserProgram;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class Perdoruesi extends JApplet {
+
+}

@@ -1,0 +1,31 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class AppletsTest extends JApplet {
+	
+
+	/*
+    An applet is a Java program that runs in a Web browser
+    My first test on Applets. This first test, it's going to produce a
+    pop - up window! 
+
+	 */
+	
+	 /*I'm going to pain something on screen; and to do it, I have to invoke the
+    paint method of the Applet [one of the fouth methods of the Applet class!]
+    */
+	
+	/*
+    Graphics extends from java.awt.*; 
+   Contains all of the classes for creating user interfaces 
+   and for painting graphics and images.
+   */
+	
+	public void paint(Graphics gr)
+	{
+		super.paint(gr);
+		gr.drawString("Applet's first test", 30, 30);
+		
+	}
+
+}

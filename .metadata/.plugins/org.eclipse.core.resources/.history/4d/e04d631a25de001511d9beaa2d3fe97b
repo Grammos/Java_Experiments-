@@ -1,0 +1,27 @@
+package simpleUserProgram;
+
+import java.awt.*;
+import javax.swing.*;
+
+/*
+ * Ne kete klas kam msu qysh me perdore init per Applet
+ * edhe pse applet nuk perkrahen ma prej Html; thjesht
+ * m'ka pelqy me dit qysh funksionon.
+ * 
+ * */
+
+public class Perdoruesi extends JApplet {
+	
+	/*
+	 * init: This method is intended for whatever initialization 
+	 * is needed for your applet. It is called after the param 
+	 * tags inside the applet tag have been processed.
+	 * */
+	public void init()
+	{
+		
+		
+	}
+	
+
+}

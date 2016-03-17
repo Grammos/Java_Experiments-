@@ -1,0 +1,13 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class AppletsTest extends JApplet {
+	
+	public void paint(Graphics gr)
+	{
+		super.paint(gr);
+		gr.drawString("hello", 23, 23);
+		
+	}
+
+}

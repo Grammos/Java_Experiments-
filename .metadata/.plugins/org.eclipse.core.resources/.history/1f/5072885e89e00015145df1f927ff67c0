@@ -1,0 +1,15 @@
+package simpleWebBrowser;
+
+import javax.swing.*;
+
+/*
+ * Would contain the GUI stuffs for the Browser; addressBar
+ * display to show the page. 
+ * 
+ * */
+
+public class Browser extends JFrame {
+	
+	private JTextField addressBar;
+
+}
